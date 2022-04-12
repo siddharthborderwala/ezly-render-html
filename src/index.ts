@@ -1,6 +1,7 @@
 export interface LinkBlock {
   title: string;
   url: string;
+  id: string;
 };
 
 export enum SocialPlatforms {
