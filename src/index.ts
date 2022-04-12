@@ -1,4 +1,4 @@
-export type LinkBlock = {
+export interface LinkBlock {
   title: string;
   url: string;
 };
@@ -12,12 +12,12 @@ export enum SocialPlatforms {
   GITHUB = 'github',
 }
 
-export type SocialBlock = {
+export interface SocialBlock {
   platform: SocialPlatforms;
   url: string;
 };
 
-export type MetaBlock = {
+export interface MetaBlock {
   username: string;
   description: string;
   image: string;
@@ -25,7 +25,7 @@ export type MetaBlock = {
   font: string;
 };
 
-export type Body = {
+export interface Body {
   meta: MetaBlock;
   socials: SocialBlock[];
   links: LinkBlock[];
