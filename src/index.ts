@@ -113,7 +113,6 @@ const generateHead = ({username, description, font, background, image}: MetaBloc
     }
     a.links-item {
       display: block;
-      width: 100%;
       padding: 0.5rem;
       margin-top: 1rem;
       background: white;
@@ -134,6 +133,23 @@ const generateHead = ({username, description, font, background, image}: MetaBloc
       margin-left: 0.5rem;
       font-family: ${font};
       font-weight: bold;
+    }
+    a.socials-item > i {
+      height: 2rem;
+      width: 2rem;
+    }
+    @media only screen and (max-width: 600px) {
+      a.socials-item > i {
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+    }
+    body::-webkit-scrollbar {
+      display: none;
+    }
+    body {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
     }
   </style>
 </head>
