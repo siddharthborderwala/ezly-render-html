@@ -107,6 +107,10 @@ const generateHead = ({username, description, font, background, image}: MetaBloc
       border: 2px solid #222222;
       border-radius: 0.5rem;
     }
+    a.socials-item > svg {
+      height: 2rem;
+      width: 2rem;
+    }
     main.links-list {
       list-style: none;
       margin-top: 1rem;
@@ -134,12 +138,8 @@ const generateHead = ({username, description, font, background, image}: MetaBloc
       font-family: ${font};
       font-weight: bold;
     }
-    a.socials-item > i {
-      height: 2rem;
-      width: 2rem;
-    }
     @media only screen and (max-width: 600px) {
-      a.socials-item > i {
+      a.socials-item > svg {
         height: 1.5rem;
         width: 1.5rem;
       }
