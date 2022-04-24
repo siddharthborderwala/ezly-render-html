@@ -76,9 +76,8 @@ const generateHead = ({username, description, font, background, image}: MetaBloc
       display: block;
       border: none;
       border-radius: 50%;
-      background-image: url(${image});
-      background-size: cover;
-      background-position: center;
+      object-fit: cover;
+      object-position: center;
       height: 8rem;
       width: 8rem;
     }
@@ -94,6 +93,7 @@ const generateHead = ({username, description, font, background, image}: MetaBloc
       justify-content: space-evenly;
       align-items: center;
       gap: 0.5rem;
+      flex-wrap: wrap;
     }
     a.socials-item {
       display: flex;
@@ -142,6 +142,12 @@ const generateHead = ({username, description, font, background, image}: MetaBloc
       a.socials-item > svg {
         height: 1.5rem;
         width: 1.5rem;
+      }
+    }
+    @media only screen and (max-width: 400px) {
+      a.socials-item > svg {
+        height: 1.25rem;
+        width: 1.25rem;
       }
     }
     body::-webkit-scrollbar {
